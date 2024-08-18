@@ -48,7 +48,7 @@ export default async function handler(req, res) {
   });
 
   res.json({
-    url: process.env.NEXT_PUBLIC_URL + "/cart?success=1",
+    url: process.env.SUCC_URL + "/cart?success=1",
     orderId: orderDoc._id.toString(),
   });
 }
